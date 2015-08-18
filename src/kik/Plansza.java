@@ -10,7 +10,7 @@ public class Plansza {
 
 	Map<String, Integer> mapA = new HashMap<String, Integer>();
 	int[][] resultInt = { { 0, 0, 0 }, { 0, 0, 0 }, { 0, 0, 0 } };
-
+	String[][] resultStr = {{"","",""},{"","",""},{"","",""}};
 	public Plansza() {
 
 	}
