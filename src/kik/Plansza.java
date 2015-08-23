@@ -9,18 +9,35 @@ public class Plansza {
 	final int O = 0;
 
 	Map<String, Integer> mapA = new HashMap<String, Integer>();
-	int[][] resultInt = { { 0, 0, 0 }, { 0, 0, 0 }, { 0, 0, 0 } };
-	String[][] resultStr = {{"","",""},{"","",""},{"","",""}};
+	//int[][] resultInt = { { 0, 0, 0 }, { 0, 0, 0 }, { 0, 0, 0 } };
+	char[][] resultChar = new char [3][3];
+	
 	public Plansza() {
 
 	}
 
 	public void wyswietl() {
-		System.out.println(resultInt[0][0] + " | " + resultInt[0][1] + " | "
-				+ resultInt[0][2] + "\n" + "---------" + "\n" + resultInt[1][0] + " | " + resultInt[1][1] + " | "
-				+ resultInt[1][2] + "\n" + "---------" +"\n" + resultInt[2][0] + " | " + resultInt[2][1] + " | "
-				+ resultInt[2][2]);
+		
+		for (int i=0;i<resultChar.length;i++){
+			for (int j=0;j<resultChar[0].length;j++){
+				if (j == resultChar[0].length-1){
+					System.out.print(resultChar[i][j]+"\n");
+				}
+				else
+				System.out.print(resultChar[i][j]+" | ");
+			}
+			System.out.println("----------");
+		}
 
 	}
+	public void fill() {
+		
+		for (int i=0;i<3;i++){
+			for (int j=0;j<3;j++){
+				resultChar[i][j] = 'E';
+			}
+		
+		}
 
+	}
 }
