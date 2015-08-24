@@ -25,7 +25,10 @@ public class Plansza {
 				} else
 					System.out.print(resultChar[i][j] + " | ");
 			}
-			System.out.println("----------");
+			if (i == resultChar.length - 1) {
+				System.out.print("\n");
+			} else
+				System.out.println("----------");
 		}
 
 	}
@@ -40,6 +43,5 @@ public class Plansza {
 		}
 
 	}
-	
 
 }
