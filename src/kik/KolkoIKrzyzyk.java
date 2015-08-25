@@ -8,12 +8,15 @@ public class KolkoIKrzyzyk {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 	Plansza plansza = new Plansza();
+	Player gracz1 = new Player();
 	//System.out.println(plansza.X);
-	Scanner in;
-	in = new Scanner(System.in);
+	
+
 	plansza.fill();
 	plansza.wyswietl();
-	in.close();
+	gracz1.userInput();
+	
+
 	}
 
 }
